@@ -5,11 +5,11 @@ services:
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PW}
-      POSTGRES_PORT: ${POSTGRE_PORT}
+      POSTGRES_PORT: ${POSTGRES_PORT}
     volumes:
       - pgdata:/var/lib/postgresql/data
     ports:
-      - "${POSTGRE_PORT}:5432"
+      - "${POSTGRES_PORT}:5432"
     restart: always
 
   pgadmin:
